@@ -1,49 +1,32 @@
 <svg width="100%" height="160" viewBox="0 0 1200 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="NeoChat • WebLLM">
   <defs>
-    <!-- Neon gradients -->
     <linearGradient id="grad-neon" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#0ff"/>
-      <stop offset="50%" stop-color="#8b5cf6"/>
-      <stop offset="100%" stop-color="#ff00cc"/>
-    </linearGradient>
-
-    <!-- Animated wave gradient -->
-    <linearGradient id="grad-wave">
-      <stop offset="0%" stop-color="#0ff">
-        <animate attributeName="offset" values="0;1;0" dur="6s" repeatCount="indefinite" />
-      </stop>
-      <stop offset="50%" stop-color="#8b5cf6">
-        <animate attributeName="offset" values="0.3;0.8;0.3" dur="6s" repeatCount="indefinite" />
-      </stop>
-      <stop offset="100%" stop-color="#ff00cc">
-        <animate attributeName="offset" values="1;0;1" dur="6s" repeatCount="indefinite" />
-      </stop>
+      <stop offset="0%" stop-color="#00E5FF"/>
+      <stop offset="50%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#FF00CC"/>
     </linearGradient>
   </defs>
 
-  <!-- Background -->
   <rect width="1200" height="160" fill="transparent"/>
 
-  <!-- Neon neural wave lines -->
-  <path d="M0 100 C150 50,300 150,450 100 S750 50,900 100 1050 150,1200 100"
-        fill="none" stroke="url(#grad-wave)" stroke-width="12" stroke-linecap="round" opacity="0.25"/>
-  <path d="M0 100 C150 50,300 150,450 100 S750 50,900 100 1050 150,1200 100"
-        fill="none" stroke="url(#grad-wave)" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
+  <!-- heavy neon wave (background glow) -->
+  <path d="M0 105 C160 50,320 160,480 105 S800 50,960 105 1120 160,1200 105"
+        fill="none" stroke="url(#grad-neon)" stroke-width="14" stroke-linecap="round" opacity="0.25"/>
+  <!-- crisp wave -->
+  <path d="M0 105 C160 50,320 160,480 105 S800 50,960 105 1120 160,1200 105"
+        fill="none" stroke="url(#grad-neon)" stroke-width="4" stroke-linecap="round" opacity="0.95"/>
 
-  <!-- Title -->
+  <!-- title (white, bold) -->
   <text x="50%" y="70" text-anchor="middle"
-        font-family="'Orbitron', sans-serif"
-        font-size="38" font-weight="800"
-        fill="white"
-        letter-spacing="2"
-        text-shadow="0 0 10px #00ffff, 0 0 20px #8b5cf6, 0 0 30px #ff00cc">
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial"
+        font-size="38" font-weight="900" fill="#FFFFFF" letter-spacing="1.5">
     NeoChat • WebLLM
   </text>
 
-  <!-- Tagline -->
-  <text x="50%" y="110" text-anchor="middle"
-        font-family="'Share Tech Mono', monospace"
-        font-size="16" fill="white" opacity="0.8">
+  <!-- tagline (white) -->
+  <text x="50%" y="112" text-anchor="middle"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial"
+        font-size="16" font-weight="600" fill="#FFFFFF" opacity="0.85">
     Browser-Native • WebGPU • 100% Local &amp; Private
   </text>
 </svg>
