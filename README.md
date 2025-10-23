@@ -1,7 +1,7 @@
 <div align="center">
 
 <p align="center">
-  <img src="./banner.svg" alt="NeoChat • WebLLM banner" width="100%"/>
+  <img src="https://raw.githubusercontent.com/MSharizal/neochat-webllm/main/banner.svg" alt="NeoChat • WebLLM banner" width="100%">
 </p>
 
 
