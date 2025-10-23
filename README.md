@@ -1,7 +1,7 @@
 <div align="center">
 
 <p align="center">
-  <img src="https://github.com/MSharizal/neochat-webllm/raw/main/banner.svg?sanitize=true" alt="NeoChat • WebLLM banner" width="100%">
+  <img src="https://github.com/MSharizal/neochat-webllm/raw/main/banner.svg?sanitize=true&v=3" alt="NeoChat • WebLLM banner" width="100%">
 </p>
 
 
@@ -54,11 +54,7 @@ The entire app lives in one elegant file: `index.html`.
 
 ---
 
-#### 2️⃣ **Enable WebGPU Flag**
-Paste one of these in your address bar and set to **Enabled → Relaunch**
-
-- 🔗 **[Open in Chrome](chrome://flags/#enable-unsafe-webgpu)**  
-- 🔗 **[Open in Edge](edge://flags/#enable-unsafe-webgpu)**  
+#### 2️⃣ **Enable WebGPU Flag** — Paste one of these in your browser’s address bar and set to **Enabled → Relaunch** → `chrome://flags/#enable-unsafe-webgpu` or `edge://flags/#enable-unsafe-webgpu`
 
 ---
 
