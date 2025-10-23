@@ -1,5 +1,7 @@
 # 🧠 NeoChat • WebLLM (Browser-Only)
 
+https://msharizal.github.io/neochat-webllm/ 
+
 A **futuristic, lightweight AI chat** that runs **entirely in your browser** — no server, no API key, no cost.  
 Built with [WebLLM (MLC.ai)](https://webllm.mlc.ai/) and designed to be hosted **free on GitHub Pages**.
 
