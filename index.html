@@ -187,9 +187,11 @@
         showProgress(true, 'Downloading weights & compiling…');
 
         if (!engine) {
-          engine = new webllm.MLCEngine({ initProgressCallback });
+          // Recommended init API
+          engine = await webllm.CreateMLCEngine(selected, { initProgressCallback });
+        } else {
+          await engine.reload(selected);
         }
-        await engine.reload(selected); // load or switch model
 
         showProgress(false);
         setStatus(`Ready · ${selected}`);
@@ -201,10 +203,10 @@
 
         addBubble('assistant', `✅ <b>${selected}</b> loaded. Ask me anything.`);
       } catch (err) {
-        console.error(err);
+        console.error('[WebLLM] Load error:', err);
         setStatus('Error loading');
         showProgress(false);
-        addBubble('assistant', `❌ Failed to load model. Open console for details.`);
+        addBubble('assistant', `❌ Failed to load model. Open the browser console (F12 → Console) and share the red error message.`);
       }
     }
 
